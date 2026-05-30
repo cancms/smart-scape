@@ -77,9 +77,27 @@ heroSlideBlock:
 
 
 research: 
-  title: Research
+  title: Research Direction 
   show_limit: 4
 #    
+
+featured_publication: 
+  title: Featured Publications
+  show_limit: 5
+#    
+#    
+
+featured_news: 
+  title: News & Events
+  show_limit: 5
+#    
+
+featured_positions: 
+  title: Join Us
+  show_limit: 5
+  contact_email: jinda.qi@nus.edu.sg
+#    
+ 
 
 
 
