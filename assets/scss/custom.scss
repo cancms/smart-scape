@@ -321,11 +321,18 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.common-page-h1-title {
+h1.common-page-h1-title {
     font-family: "Inconsolata" !important;
     font-weight: 500;
     text-transform: uppercase; /* 全部大写 */
     letter-spacing: 0.5rem;
+}
+
+h2.common-page-h1-title {
+    font-family: "Inconsolata" !important;
+    // font-weight: 500;
+    // text-transform: uppercase; /* 全部大写 */
+    // letter-spacing: 0.5rem;
 }
 .list-page-index-sidebar {
   font-family: "Inconsolata";
@@ -409,6 +416,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .pub-title{
     font-weight: bold;
+  }
+  .pub-journal {
+    font-weight: normal;
+    font-style: italic;
   }
 }
 

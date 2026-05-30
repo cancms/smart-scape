@@ -1,24 +1,49 @@
-- title: "A multimodal robotic platform for multi-element electrocatalyst discovery"
-#  authors_text: "https://doi.org/10.1038/s41586-025-09640-5"
-  authors_text: "Zhang, Z., Ren, Z., Hsu, C.W., Chen, W. et al."
-  journal: "Nature 647, 390-396"
-  year: 2025
-  links:
-    - text: DOI
-      url: "https://doi.org/10.1038/s41586-025-09640-5"
+  - title: "Generative urban climate modeling using coupled GAN-UWG frameworks: Morphological strategies for transformation and adaptive heat mitigation"
+    authors_text: "Xiong, Z., Wang, M., Zhao, J., Yuan, H., Sun, C., Zhou, S., ... & Qi, J.*"
+    year: 2026
+    journal: "Urban Climate, 65, 102786"
+    research_topic: "Thermal Comfort"
+    links:
+      - text: DOI
+        url: https://doi.org/10.1016/j.uclim.2026.102786
 
-- title: "Click-locking strategy enables automated synthesis of single-atom catalysts with industrial compatibility"
-  authors_text: "Chen, W., Feng, L., Ma, B. et al."
-  journal: "Nature Synthesis"
-  year: 2026
-  links:
-    - text: DOI
-      url: "https://doi.org/10.1038/s44160-026-01004-9"
 
-- title: "Designer topological-single-atom catalysts with site-specific selectivity"
-  authors_text: "Chen, W., Bao, M., Meng, F., Ma, B., Feng, L. et al."
-  journal: "Nature Communications"
-  year: 2025
-  links:
-    - text: DOI
-      url: "https://doi.org/10.1038/s41467-025-55838-6"
+  - title: "A new method for planning long-distance trails using wilderness quality mapping and trajectory data: A case study of the Taihang Mountain National Forest Trail in China"
+    authors_text: "Chen, Y., Cao, Y., Ye, Z., Liu, T., Wang, P., Feng, Y., ... & Yang, R."
+    year: 2026
+    journal: "Journal of Environmental Management, 402, 129019"
+    research_topic: "Computational urban and landscape design"
+    links:
+      - text: DOI
+        url: https://doi.org/10.1016/j.jenvman.2026.129019
+
+
+  - title: "A cross-city transferable convolutional neural network framework for assessing street-scale flood risks in urban networks"
+    authors_text: "Wang, M., Zhuang, J. A., Zhao, J., Sun, C., Li, J., Zhou, L., ... & Qi, J.*"
+    year: 2025
+    journal: "Journal of Environmental Management, 395, 127977"
+    research_topic: "Computational urban and landscape design"
+    links:
+      - text: DOI
+        url: https://doi.org/10.1016/j.jenvman.2025.127977
+
+
+  - title: "Tourism-related short-term migration for heat adaptation: Impacts of socio-economic-institutional, climatic, socio-interactive, emotional, and perceptive-behavioral-psychological factors and implications for responsible tourism development"
+    authors_text: "He, B. J., Qi, J., Cheshmehzangi, A., Attia, S., Prasad, D., Zahed, L. M., ... & Liu, Z."
+    year: 2025
+    journal: "Human Settlements and Sustainability, 1(4), 290-303"
+    research_topic: "Thermal Comfort"
+    links:
+      - text: DOI
+        url: https://doi.org/10.1016/j.hssust.2025.09.004
+
+
+  - title: "Climate-driven transformations: A framework for the sustainable urban landscape system to enhance heat resilience"
+    authors_text: "Huang, B., Qi, J., Pathak, M., Sharifi, A., Cheshmehzangi, A., Attia, S., ... & He, B. J."
+    year: 2025
+    journal: "Sustainable Cities and Society, 106684"
+    research_topic: "Thermal Comfort"
+    links:
+      - text: DOI
+        url: https://doi.org/10.1016/j.scs.2025.106684
+
