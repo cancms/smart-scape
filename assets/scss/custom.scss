@@ -423,6 +423,28 @@ h2.common-page-h1-title {
   }
 }
 
+.job-items-list {
+  .job-item {
+    .separator {
+      border-top: 1px solid lightgray;
+      height: 1px;
+      margin: 2rem 0;
+    }
+
+
+    .job-type {
+
+      font-weight: bolder;
+      font-family: "Inconsolata";
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+
+    }
+  }
+}
+
 
 .page-contacts{
   .contact-item{

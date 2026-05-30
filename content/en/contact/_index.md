@@ -12,18 +12,11 @@ contact1_info:
     
     
 email_info:
-    email: chenwb@pku.edu.cn
+    email:  
     type: Personal Contact
     name: Dr. Weibin Chen 
 
 
 ---
 
-
-
-Based at Peking University (spanning the Beijing headquarters and the Shenzhen Graduate School), our research is situated at the interface of **catalysis, electrochemistry, artificial intelligence, and autonomous experimentation**. We engineer closed-loop research paradigms that seamlessly integrate inverse materials design, automated synthesis, high-throughput screening, and mechanistic analysis to accelerate the discovery of high-performance catalytic materials.
-
-A primary thrust of the [AI4C initiative]() is the development of fully autonomous experimental platforms. By synergizing robotic automation, data-driven modeling, and active real-time feedback, we aim to transition catalyst discovery into a highly rapid, reproducible, and inherently scalable process.
-
-
-
+ 
