@@ -11,10 +11,11 @@
   <div class="container pt-1">
     <h1 class="mb-0 common-page-h1-title">{{ $title }}</h1>
 
-    {{ with $page.Params.subtitle }}
-    <p class=" common-page-subtitle">{{ . | markdownify | emojify }}</p>
-    {{end}}
-
+      {{if $page.Params.author}}
+        <div class="article-metadata mb-1 mt-3">
+          Author: {{ $page.Params.author | markdownify | emojify }}</a>
+        </div>
+      {{end}}
 
 
     {{/* Summary */}}

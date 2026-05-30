@@ -2,7 +2,7 @@
 title:  Design
 subtitle:  
 
-view: research_item_card
+# view: research_item_card
 
 
 ---

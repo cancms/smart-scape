@@ -39,6 +39,14 @@
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
   </div>
 
+  {{if $item.Params.author}}
+  <div class="article-metadata mb-1 mt-3">
+    Author: {{ $item.Params.author | markdownify | emojify }}</a>
+  </div>
+ {{end}}
+
+
+
   {{ with $summary }}
   <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
     <div class="article-style">
