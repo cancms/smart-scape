@@ -500,6 +500,11 @@ h2.common-page-h1-title {
     font-weight: bold;
     margin: 0 0 0.5rem 0;
   }
+  .li-positions  {
+    li {
+      margin:  0.5rem 0;
+    }
+  }
 }
 
 
@@ -560,7 +565,72 @@ h2.common-page-h1-title {
 
 
 
+.page-footer {
 
+
+            background-color: #ffffff;
+            // color: #2c3e50;
+            padding: 3rem 0;
+            margin-top: 5rem;
+            border-top: 1px solid #e9ecef;
+
+
+        .footer-classic .lab-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            // color: #1a3a4a;
+        }
+
+        .footer-classic .institution-name {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            text-align: left;
+            // color: #5a6e7c;
+        }
+
+        .footer-classic h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            // color: #1a3a4a;
+        }
+
+        .footer-classic address {
+            font-style: normal;
+            line-height: 1.6;
+            font-size: 0.85rem;
+            // color: #5a6e7c;
+        }
+
+        .footer-classic .address-note {
+            font-size: 0.75rem;
+            // color: #8c9aa8;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .footer-classic .social-link {
+            // color: #5a6e7c;
+            font-size: 1.1rem;
+            margin-right: 1rem;
+            transition: color 0.2s;
+        }
+
+        .footer-classic .social-link:hover {
+            // color: #2c5f8a;
+            text-decoration: none;
+        }
+
+        .footer-classic .footer-copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 1rem;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.8rem;
+            // color: #8c9aa8;
+        }
+}
 
 
 
@@ -568,12 +638,13 @@ h2.common-page-h1-title {
 
 /* 页脚点缀 */
 .footer {
-  padding: 2rem 4rem;
-  border-top: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: center;
-  color: #666;
-  background: #ffffff;
+  // padding: 2rem 4rem;
+  // border-top: 1px solid #e0e0e0;
+  // display: flex;
+  // justify-content: center;
+  // color: #666;
+  // background: #ffffff;
+
 }
 
 .site-footer .powered-by {

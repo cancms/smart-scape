@@ -18,7 +18,7 @@ marketing:
     site_type: Organization
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
+    description: ''
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -51,6 +51,27 @@ header:
 #      allow_derivatives: false
 #      share_alike: true
 #      allow_commercial: false
+
+lab_info:
+  lab_full_name: Department of Architecture, College of Design and Engineering, National University of Singapore
+  address: Department of Architecture, College of Design and Engineering, National University of Singapore, Singapore 117566
+  social_links:
+    - name: 'Facebook'
+      icon: 'fab fa-facebook'
+      url: 'https://www.facebook.com/'
+    - name: 'Twitter'
+      icon: 'fab fa-twitter'
+      url: 'https://twitter.com/'
+    - name: 'LinkedIn'
+      icon: 'fab fa-linkedin'
+      url: 'https://www.linkedin.com/'
+    - name: 'YouTube'
+      icon: 'fab fa-youtube'
+      url: 'https://www.youtube.com/'
+    - name: 'GitHub'
+      icon: 'fab fa-github'
+      url: 'https://github.com/'
+
 
 # Localization
 

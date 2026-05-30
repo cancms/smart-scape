@@ -95,7 +95,7 @@ $featured_news_limit := first .Params.featured_news.show_limit $featured_news }}
     <div class="home-positions-list row">
       <div class="col-12 col-md-8">
         <div class="pos-subtitle">Open Positions</div>
-        <ul>
+        <ul class="li-positions ">
           {{ range $index, $item := $featured_positions }}
           <li>{{$item.title | markdownify | emojify }}</li>
           {{end}}
