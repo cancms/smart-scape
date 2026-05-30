@@ -359,6 +359,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .research-list-page, #research {
+  .page-list-subcategory{
+    padding: 1rem 0 0 0;
+  }
   .research-list-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
