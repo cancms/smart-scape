@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home-section {
   padding: 1rem 0;
+  font-size: 1.1rem;
 }
 
 
@@ -366,7 +367,42 @@ h2.common-page-h1-title {
 
 
 
-.research-list-page, #research {
+/* 结构化两栏布局容器 */
+.shortcode-split-wrap {
+  .split-container {
+    .split-image {
+      width: 100%;
+      // height: 16rem;
+      overflow: hidden;
+      img {
+        margin: 0.5rem auto 0 auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .split-text {
+      text-align: justify;
+    }
+  }
+
+  /* 右图左文模式：通过 order 调换位置 */
+  .split-reverse .split-image {
+    order: 2; /* 图片排第二（右边） */
+  }
+
+  .split-reverse .split-text {
+    order: 1; /* 文字排第一（左边） */
+  }
+}
+
+ #research {
+  .home-research-item {
+
+  }
+ }
+
+.research-list-page {
   .page-list-subcategory{
     padding: 1rem 0 0 0;
   }
@@ -409,7 +445,7 @@ h2.common-page-h1-title {
   .paper-item {
         min-height: 17rem;
     margin-bottom: 1.3rem;
-    dissplay: flex !important;
+    display: flex !important;
     flex-direction: column;
 
   }
@@ -432,8 +468,11 @@ h2.common-page-h1-title {
       font-size: 0.9rem;
     }
   }
+  .pub-icon {
+    font-weight: bold;
+  }
   .paper-title {
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
     //font-weight: 600;
     margin: 0.8rem 0 1rem;
     line-height: 1.3;
@@ -444,6 +483,7 @@ h2.common-page-h1-title {
   .paper-authors {
     color: #666;
     font-size: 0.9rem;
+        min-height: 4rem;
     // border-left: 2px solid #999999;
     // padding-left: 1rem;
   }
@@ -461,7 +501,7 @@ h2.common-page-h1-title {
     text-transform: uppercase; /* 全部大写 */
     letter-spacing: 0.5rem;
 
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
 }
 
@@ -554,10 +594,119 @@ h2.common-page-h1-title {
 
 
 
+.people-widget {
+  .portrait-title {
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
 
 
 
+.page-contact-us {
+  .contact-card-wrap {
+    margin: 3rem 0.2rem;
+  }
 
+  /* Contact Info Card */
+  .contact-info-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    //padding: 0;
+    //margin:  0;
+    transition: all .3s ease;
+    border: 1px solid #f0f0f0;
+    height: 100%;
+  }
+
+  .contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 32px rgba(26, 77, 140, 0.1);
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    // border-left: 4px solid #1a4d8c;
+     padding: 1rem 0 0 0.5rem;
+  }
+
+  .card-title i {
+    font-size: 1.3rem;
+    color: #1a4d8c;
+  }
+
+  /* Contact Item */
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .contact-icon {
+    width: 2rem;
+    height: 2rem;
+    background: #eef3fc;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .contact-icon i {
+    font-size: 1rem;
+    color: #1a4d8c;
+  }
+
+  .contact-details {
+    flex: 1;
+  }
+
+  .contact-label {
+
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+
+  .contact-value {
+    font-size: 1rem;
+    font-weight: 500;
+    //color: #1e3a5f;
+    word-break: break-all;
+    line-height: 1.4;
+  }
+
+  .contact-value a {
+    //color: #1a4d8c;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-value a:hover {
+    //color: #0f3a6b;
+    text-decoration: underline;
+  }
+
+}
 
 
 

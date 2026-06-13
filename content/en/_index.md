@@ -38,32 +38,20 @@ heroSlideBlock:
         align: left
         background:
           image:
-            filename: group_slides/g1.jpg
+            filename: group_slides/s1.png
             filters:
               brightness: 1 # 0.5 #1
           position: right
           color: '#666'  
  
   
-
-      - title: "" # desc-title1
-        content:  "" # desc1
-        align: left
-        background:
-          image:
-            filename: group_slides/g1.jpg
-            filters:
-              brightness: 1 # 0.5 #1
-          position: right
-          color: '#666'  
  
-  
  
   design:
     # Slide height is automatic unless you force a specific height (e.g. '400px')
     # height controlled by css
     
-#    slide_height: '500px'
+    slide_height: '450px'
     
     
     is_fullscreen: false

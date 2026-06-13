@@ -10,7 +10,9 @@
     <div class="paper-authors">
       {{ $item.authors_text | markdownify | safeHTML}}
     </div>
-    <div class="paper-title">{{ $item.title | markdownify | safeHTML}}</div>
+    <div class="paper-title">
+      <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+      {{ $item.title | markdownify | safeHTML}}</div>
     <div class="paper-links btn-links">
       {{ range $l_index, $l_item := $item.links }}
       <a class="btn btn-outline-primary btn-page-header btn-sm" target="_blank" href="{{$l_item.url}}">

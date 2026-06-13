@@ -41,14 +41,20 @@ $research_items := partial "functions/get_type_items" (dict "item_type"
       </div>
     </div>
     <div class="research-list-wrap">
-      {{ range $index, $item := $research_items }} {{ partial
-      "functions/render_view" (dict "item" $item "view" "research_item_card"
-      "index" $index) }} {{end}}
+      {{ range $index, $item := $research_items }}
+          {{ partial  "functions/render_view" (dict
+                        "item" $item
+                        "view" "home_research_item"
+                        "index" $index
+            )
+          }}
+      {{end}}
     </div>
   </div>
 </section>
 
-{{/* selected publications */}} {{ $featured_pubs := where (sort
+{{/* selected publications */}}
+{{ $featured_pubs := where (sort
 (site.Data.publications) "year" "desc") "home_featured" 1 }} {{
 $featured_pubs_limit := first .Params.featured_publication.show_limit
 $featured_pubs }}
@@ -61,7 +67,17 @@ $featured_pubs }}
     </div>
     <div class="home-papers-grid row">
       {{ range $index, $item := $featured_pubs_limit }} {{ partial
-      "views/home_pub_item" (dict "item" $item "index" $index) }} {{end}}
+      "views/home_pub_item" (dict "item" $item "index" $index) }}
+      {{end}}
+
+      <div class="col-12 col-md-4">
+          <div class="paper-item card-simple view-card justify-content-center align-items-center">
+            <div class="paper-title" style="flex-grow: unset;">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <a href="{{  "publications" | relURL }}">See all publications</a>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 </section>
@@ -83,7 +99,9 @@ $featured_news_limit := first .Params.featured_news.show_limit $featured_news }}
   </div>
 </section>
 
-{{/* selected positions */}} {{ $featured_positions := first
+{{/* selected positions */}}
+{{/*  去掉首页的 join us block
+{{ $featured_positions := first
 .Params.featured_positions.show_limit site.Data.jobs.opportunities }}
 <section id="featured_positions" class="home-section">
   <div class="container">
@@ -113,3 +131,4 @@ $featured_news_limit := first .Params.featured_news.show_limit $featured_news }}
     </div>
   </div>
 </section>
+ */}}

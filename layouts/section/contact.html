@@ -1,54 +1,84 @@
 {{- define "main" -}}
 
-{{ partial "page_header.html" . }}
+  {{$titles := .Params.content_titles}}
+  {{$values := .Params.content_values}}
 
 
 
-<div class="universal-wrapper mt-5 page-contacts">
+{{/*  {{ partial "page_header.html" . }}  */}}
+
+<div class="container pt-3 page-contact-us">
+
+  <div class="mb-5 pb-2 mt-5" style="    border-bottom: 1px solid #e2e8f0;">
+      <h1 class="mb-0 common-page-h1-title ">{{ .Title | markdownify | emojify }}</h1>
+  </div>
+
+
   {{ with .Content }}
     <div class="article-style">{{ . }}</div>
   {{ end }}
 
 
+  <div class="contact-card-wrap row contact-info-card" >
 
-  <!-- 联系信息网格 (名片格式) -->
-  <div class="row home-content-wrap" style="padding: 1rem 0;">
-
-    <div class=" col-12 col-md-4">
-      <div class="contact-item paper-item ">
-        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-        <h4>{{.Params.email_info.name | markdownify }}</h4>
-        <p>{{.Params.email_info.email | markdownify }}<br>
-          <span style="color: #94a3b8; font-size: 0.85rem;">{{.Params.email_info.type | markdownify }}</span></p>
-        {{/*<p style="margin-top: 0.5rem;"><a href="mailto:pi.ai4c@pku.edu.cn">pi.ai4c@pku.edu.cn</a><br>
-          <span style="color: #94a3b8; font-size: 0.85rem;">PI 联系</span></p>*/}}
+      <div class="col-12 col-md-6" style="padding-left: 0; padding-right: 0;">
+        <img src="{{"images/contact/c1.png" | relURL }}" alt="" style="height: 100%" />
       </div>
-    </div>
+      <div class="col-12 col-md-6">
+        <div class="contact-info-card-wrap1">
+          <div class="card-title">
+            <i class="fas fa-circle-info"></i>
+            {{$titles.contact_info | markdownify}}
+          </div>
 
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <div class="contact-label">{{$titles.email | markdownify}}</div>
+              <div class="contact-value">
+                {{$values.email | markdownify}}
+              </div>
+            </div>
+          </div>
 
+          <!-- Address -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <div class="contact-label">{{$titles.address | markdownify}}</div>
+              <div class="contact-value" id="addressText">
+                {{$values.address | markdownify}}
+              </div>
 
+            </div>
+          </div>
 
-    <div class=" col-12 col-md-4">
-      <div class="contact-item paper-item ">
-        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <h4>{{.Params.contact1_info.name | markdownify }}</h4>
-        <p>{{.Params.contact1_info.address | markdownify }}</p>
+          <!-- Additional info: website hint -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="contact-details">
+              <div class="contact-label">{{$titles.university_site | markdownify}}</div>
+              <div class="contact-value">
+                {{$values.university_site | markdownify}}
+
+                <span style="font-size: 0.75rem; color: #8aaec9; margin-left: 0.5rem;">
+                              <i class="fas fa-external-link-alt"></i>
+                          </span>
+              </div>
+              <div style="  font-size: 0.75rem;  margin-top: 0.3rem;">
+                {{$values.site_info | markdownify}}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-
-
-
-    <div class=" col-12 col-md-4">
-
-      <div class="contact-item paper-item   ">
-        <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
-        <h4>{{.Params.contact2_info.name | markdownify }}</h4>
-        <p>{{.Params.contact2_info.address | markdownify }}</p>
-      </div>
-    </div>
-
-
 
 
   </div>

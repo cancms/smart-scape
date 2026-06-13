@@ -24,11 +24,8 @@
     </div>
   {{ end }}
 
-
-   {{/*  {{ $query := where site.RegularPages "Section" "authors" }}  */}}
-    {{/*  {{ $query :=   (where site.Pages "Section" "authors")  }}  */}}
-
-    {{ $query := where (where site.Pages "Section" "authors") "Kind" "term" }}
+  {{ range $block.content.user_groups }}
+    {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
 
     {{/* Sort */}}
     {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
@@ -37,24 +34,20 @@
     {{ $sort_order := cond $sort_ascending "asc" "desc" }}
     {{ $query = sort $query $sort_by $sort_order }}
 
-
+    {{if $query | and (gt (len $block.content.user_groups) 1) }}
+      <div class="col-md-12 text-left">
+        <h2 class="mb-4 common-page-h1-title ">{{ . | markdownify }}</h2>
+      </div>
+    {{end}}
 
     {{ range $query }}
       {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
       {{/* Get link to user's profile page. */}}
-
-      {{/*  {{ .Kind }} ===  */}}
       {{ $link := "" }}
-
       {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
         {{ $link = .RelPermalink }}
       {{ end }}
-
-
-
-      {{/* Render person */}}
-
-      <div class="col-12 col-md-4 people-person mb-5">
+      <div class="col-12 col-sm-auto people-person">
         {{ $src := "" }}
         {{ if site.Params.features.avatar.gravatar }}
           {{ $src = printf "https://s.gravatar.com/avatar/%s?s=150" (md5 .Params.email) }}
@@ -82,4 +75,5 @@
         </div>
       </div>
     {{ end }}
+  {{ end }}
 </div>
